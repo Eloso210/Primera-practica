@@ -1,0 +1,18 @@
+name: Hola Mundo Action
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+
+      - name: Ejecutar script de Hola Mundo
+        run: |
+          echo "¡Hola Mundo!"
